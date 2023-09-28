@@ -1,18 +1,38 @@
 import * as React from 'react';
+import { Button, StyleSheet, View } from 'react-native';
+import PayStackWebView, {
+  TransactionSuccessResponse,
+  CancelResponse,
+} from 'paystack-react-native';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-full-paystack-web-view';
+// Note: For type support
+type TPayStackWebViewRef = React.ElementRef<typeof PayStackWebView>;
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+  const PayStackWebViewRef = React.useRef<TPayStackWebViewRef>(null);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <PayStackWebView
+        amount={300}
+        customer={{
+          email: 'info@gmail.com',
+        }}
+        publicKey="pk_test_xxxxx"
+        ref={PayStackWebViewRef}
+        onCancel={(data: CancelResponse) => {
+          console.log(data);
+        }}
+        onSuccess={(data: TransactionSuccessResponse) => {
+          console.log(data.data);
+        }}
+      />
+      <Button
+        onPress={() => {
+          PayStackWebViewRef.current?.start();
+        }}
+        title={'Pay Now'}
+      />
     </View>
   );
 }
