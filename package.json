@@ -1,5 +1,5 @@
 {
-  "name": "paystack-react-native",
+  "name": "react-native-paystack-webview-sdk",
   "version": "1.0.0",
   "description": "react native package for processing paystack payment",
   "main": "lib/commonjs/index",
@@ -40,13 +40,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/cmcWebCode40/paystack-react-native",
-  "author": "Chinweike Michael Chinonso <infinity_michael@yahoo.com> (https://github.com/cmcWebCode40/react-native-input-for-otp)",
+  "repository": "https://github.com/cmcWebCode40/react-native-paystack-webview-sdk",
+  "author": "Chinweike Michael Chinonso <infinity_michael@yahoo.com> (https://github.com/cmcWebCode40)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cmcWebCode40/paystack-react-native/issues"
+    "url": "https://github.com/cmcWebCode40/react-native-paystack-webview-sdk/issues"
   },
-  "homepage": "https://github.com/cmcWebCode40/paystack-react-native#readme",
+  "homepage": "https://github.com/cmcWebCode40/react-native-paystack-webview-sdk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

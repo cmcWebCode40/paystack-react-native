@@ -3,7 +3,7 @@ import { Button, StyleSheet, View } from 'react-native';
 import PayStackWebView, {
   TransactionSuccessResponse,
   CancelResponse,
-} from 'paystack-react-native';
+} from 'react-native-paystack-webview-sdk';
 
 // Note: For type support
 type TPayStackWebViewRef = React.ElementRef<typeof PayStackWebView>;
@@ -21,7 +21,7 @@ export default function App() {
         publicKey="pk_test_xxxxx"
         ref={PayStackWebViewRef}
         onCancel={(data: CancelResponse) => {
-          console.log(data);
+          console.log(data); k
         }}
         onSuccess={(data: TransactionSuccessResponse) => {
           console.log(data.data);
