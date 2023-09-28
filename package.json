@@ -1,5 +1,5 @@
 {
-  "name": "react-native-full-paystack-web-view",
+  "name": "paystack-react-native",
   "version": "0.1.0",
   "description": "react native package for processing paystack payment",
   "main": "lib/commonjs/index",
@@ -29,7 +29,7 @@
   "scripts": {
     "test": "jest",
     "typecheck": "tsc --noEmit",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
     "prepack": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
@@ -40,13 +40,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/cmcWebCode40/react-native-input-for-otp/react-native-full-paystack-web-view",
+  "repository": "https://github.com/cmcWebCode40/paystack-react-native",
   "author": "Chinweike Michael Chinonso <infinity_michael@yahoo.com> (https://github.com/cmcWebCode40/react-native-input-for-otp)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cmcWebCode40/react-native-input-for-otp/react-native-full-paystack-web-view/issues"
+    "url": "https://github.com/cmcWebCode40/paystack-react-native/issues"
   },
-  "homepage": "https://github.com/cmcWebCode40/react-native-input-for-otp/react-native-full-paystack-web-view#readme",
+  "homepage": "https://github.com/cmcWebCode40/paystack-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -55,6 +55,7 @@
     "@evilmartians/lefthook": "^1.2.2",
     "@react-native-community/eslint-config": "^3.0.2",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@testing-library/react-native": "^12.3.0",
     "@types/jest": "^28.1.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "0.70.0",
@@ -69,6 +70,7 @@
     "react": "18.2.0",
     "react-native": "0.72.4",
     "react-native-builder-bob": "^0.20.0",
+    "react-native-webview": "^13.6.0",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -77,7 +79,8 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-webview": "*"
   },
   "engines": {
     "node": ">= 16.0.0"
