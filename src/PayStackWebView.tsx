@@ -210,8 +210,6 @@ const PayStackWebView: React.ForwardRefRenderFunction<
   </html> 
   `;
 
-  console.log(Paystackcontent);
-
   const onMessageHandler = (event: WebViewMessageEvent) => {
     const data = event.nativeEvent?.data;
     const webResponse = JSON.parse(data);
