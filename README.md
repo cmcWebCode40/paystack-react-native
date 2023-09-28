@@ -1,6 +1,6 @@
-# paystack-react-native
+# react-native-paystack-webview-sdk
 
-Paystack React Native SDK enables easy integration of Paystack payments into your React Native applications.
+Paystack React Native SDK enables easy integration of Paystack payments into your React Native applications using Web View.
 
 [demo](https://www.loom.com/share/a368f65a0b2641b69e4fce1d74fcbbd8)
 
@@ -8,9 +8,10 @@ Paystack React Native SDK enables easy integration of Paystack payments into you
 
 Paystack component used for accepting payment in your react native applications
 
+- Integrated with the[Paystack InlineJS popup V2 ](https://paystack.com/docs/guides/migrating-from-inlinejs-v1-to-v2/)
 - TypeScript to ensure type-safe code and better DX
 - Support for Expo and React native CLI
-- Flexible implement following [paystack docs](https://paystack.com/docs/payments/accept-payments/)
+- Flexible implementation following the [paystack docs](https://paystack.com/docs/payments/accept-payments/)
 
 credits to the [React-Native-Paystack-WebView](https://github.com/just1and0/React-Native-Paystack-WebView) by [just1and0](https://github.com/just1and0) for inspiration.
 
@@ -19,19 +20,19 @@ credits to the [React-Native-Paystack-WebView](https://github.com/just1and0/Reac
 ##### Npm
 
 ```sh
-npm install paystack-react-native
+npm install react-native-paystack-webview-sdk
 ```
 
 ##### Yarn
 
 ```sh
-yarn  paystack-react-native
+yarn  react-native-paystack-webview-sdk
 ```
 
 ##### Expo
 
 ```sh
-expo  install paystack-react-native
+expo  install react-native-paystack-webview-sdk
 ```
 
 > **_Important_**: This package has a peer dependency `react-native-webview` which is requred for this package to work coorrectly
@@ -44,7 +45,7 @@ import { Button, StyleSheet, View } from 'react-native';
 import PayStackWebView, {
   TransactionSuccessResponse,
   CancelResponse,
-} from 'paystack-react-native';
+} from 'react-native-paystack-webview-sdk';
 
 export default function App() {
   return (
@@ -100,7 +101,7 @@ import { Button, StyleSheet, View } from 'react-native';
 import PayStackWebView, {
   TransactionSuccessResponse,
   CancelResponse,
-} from 'paystack-react-native';
+} from 'react-native-paystack-webview-sdk';
 
 // Note: For typescript  support
 type TPayStackWebViewRef = React.ElementRef<typeof PayStackWebView>;
