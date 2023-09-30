@@ -18,10 +18,10 @@ export default function App() {
         customer={{
           email: 'info@gmail.com',
         }}
-        publicKey="pk_test_xxxxx"
+        publicKey="pk_test_4cda233b9729ce3fa014151bd1ad5b2f0d585ee5"
         ref={PayStackWebViewRef}
         onCancel={(data: CancelResponse) => {
-          console.log(data); k
+          console.log(data);
         }}
         onSuccess={(data: TransactionSuccessResponse) => {
           console.log(data.data);
