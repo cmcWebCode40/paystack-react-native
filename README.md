@@ -1,5 +1,7 @@
 # react-native-paystack-webview-sdk
 
+<img width="977" alt="paystack" src="https://github.com/cmcWebCode40/react-native-paystack-webview-sdk/assets/54280620/3565dbef-f8a2-41cf-a079-f7ca1bcb2600">
+
 Paystack React Native SDK enables easy integration of Paystack payments into your React Native applications using Web View.
 
 [demo](https://www.loom.com/share/a368f65a0b2641b69e4fce1d74fcbbd8)
