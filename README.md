@@ -67,7 +67,6 @@ export default function App() {
           'qr',
           'ussd',
         ]}
-        ref={PayStackWebViewRef}
         onCancel={(data: CancelResponse) => {
           // handle cancel response
         }}
